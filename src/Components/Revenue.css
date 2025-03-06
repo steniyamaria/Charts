@@ -1,0 +1,91 @@
+.revenue-container {
+    background: #1e1e2f;
+    color: white;
+    padding: 20px;
+    margin: 20px ;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 370px;
+  }
+  
+  /* Header */
+  .revenue-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dropdown-btn {
+    background: #2c2c3e;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  /* Revenue Value */
+  .revenue-value {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .revenue-value h2 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .decimal {
+    font-size: 18px;
+    opacity: 0.7;
+  }
+  
+  .growth {
+    color: #28a745;
+    font-size: 14px;
+  }
+  
+  /* Tooltip */
+  .recharts-tooltip-wrapper {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  /* Legend */
+.legend-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #b0b0b0;
+  }
+  
+  /* Colored Dots */
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .profit-dot {
+    background-color: #3b82f6;
+  }
+  
+  .loss-dot {
+    background-color: #b0b0b0;
+  }
+  

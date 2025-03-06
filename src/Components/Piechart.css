@@ -1,0 +1,64 @@
+/* Container Styling */
+.traffic-channel-container {
+    background: #1e1e2f; /* Dark background */
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.traffic-channel-container h5 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* Dropdown Button Styling */
+.traffic-dropdown {
+    background: #2a2a3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Chart Legend */
+.traffic-legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* Colors for Traffic Sources */
+.direct-dot { background: #1e88e5; }  /* Blue */
+.referral-dot { background: #30c5ff; } /* Light Blue */
+.organic-dot { background: #ddd; }  /* Light Gray */
+
+/* Tooltip Styling */
+.recharts-tooltip-wrapper {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}

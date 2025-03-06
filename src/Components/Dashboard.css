@@ -1,0 +1,100 @@
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #1e1e2f;
+    color: white;
+    z-index: 1000;
+  }
+  
+  .dashboard-title h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .dashboard-title p {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin: 5px 0 0;
+  }
+  
+  .dashboard-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .filter-btn,
+  .export-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: #b0b0b0;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .filter-btn:hover,
+  .export-btn:hover {
+    color: white;
+  }
+  
+  .filter-icon,
+  .export-icon {
+    font-size: 14px;
+  }
+  .stats-revenue{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .dashboard-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Stats Container */
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for bigger screens */
+    gap: 20px;
+    width: 50%;
+    max-width: 500px;
+}
+
+/* Revenue Chart */
+.revenue-container {
+    background: #1e1e2f;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%; /* Keep it beside the cards */
+    max-width: 500px;
+    height: 370px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 1024px) {
+    .stats-revenue {
+        flex-direction: column; /* Stack elements in one column */
+        align-items: center;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr; /* Stack cards vertically */
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .revenue-container {
+        width: 100%; /* Full width below the cards */
+        max-width: 500px;
+    }
+}

@@ -1,0 +1,83 @@
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    padding: 20px;
+    width: 50%;
+    max-width: 500px;
+    
+}
+.stats-card {
+    background: #1e1e2f;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 240px; /* Fixed card width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.stats-card:hover {
+    transform: scale(1.05);
+}
+
+/* Card Titles */
+.stats-title {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin-bottom: 8px;
+}
+
+/* Card Value */
+.stats-value {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Change Percentage */
+.stats-change {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.stats-change.positive {
+    color: #28a745;
+}
+
+.stats-change.negative {
+    color: #dc3545;
+}
+
+/* Subtext */
+.stats-sub {
+    color: #b0b0b0;
+}
+
+/* View Report */
+.view-report {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.view-report:hover {
+    text-decoration: underline;
+}
+
+/* ✅ Make All Cards in One Column When Screen Shrinks */
+@media screen and (max-width: 1024px) {
+    .stats-container {
+        grid-template-columns: 1fr; /* Stack cards in one column */
+        align-items: center;
+        justify-content: center;
+        margin-left: 0; /* Reset left margin */
+    }
+    
+    .stats-card {
+        width: 240px; /* Keep the same card width */
+        margin: 0 auto; /* Center cards */
+    }
+}

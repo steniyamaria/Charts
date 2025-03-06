@@ -1,0 +1,90 @@
+/* Recent Activity Card */
+.activity-card {
+    background: #1e1e2f;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;  /* Reduced the card size */
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Table */
+.activity-table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.activity-table th {
+    background: #2c2c3e;
+    color: #b0b0b0;
+    text-align: left;
+    padding: 10px;
+}
+
+.activity-table td {
+    padding: 12px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+/* Profile Image */
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-image {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+/* Status Badges */
+.status-badge {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    width: fit-content;
+}
+
+.member {
+    background-color: #6c757d;
+    color: white;
+}
+
+.signed-up {
+    background-color: #ff7f50;
+    color: white;
+}
+
+.new-customer {
+    background-color: #17a2b8;
+    color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .activity-card {
+        width: 95%;
+    }
+
+    .activity-table th,
+    .activity-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .profile-image {
+        width: 30px;
+        height: 30px;
+    }
+}
