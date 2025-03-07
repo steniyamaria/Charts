@@ -71,6 +71,21 @@
     color: white;
 }
 
+.activity-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-select {
+    padding: 6px 10px;
+    border-radius: 5px;
+    background: #2c2c3e;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
 /* Responsive */
 @media screen and (max-width: 768px) {
     .activity-card {
