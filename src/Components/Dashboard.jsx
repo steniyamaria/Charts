@@ -143,7 +143,7 @@ const Dashboard = () => {
                 </div>
             </div>
 
-            <div className="activity-card">
+{/*             <div className="activity-card">
                 <h5>Recent Activity</h5>
                 <table className="activity-table">
                     <thead>
@@ -178,7 +178,46 @@ const Dashboard = () => {
                         ))}
                     </tbody>
                 </table>
-            </div>
+            </div> */}
+
+
+              <div className="activity-card">
+    <div className="activity-header">
+        <h5>Recent Activity</h5>
+
+        {/* Dropdown for Last 24 Hours filter */}
+        <select className="dropdown-select">
+            <option>Last 24 Hours</option>
+        </select>
+    </div>
+
+    <table className="activity-table">
+        <thead>
+            <tr>
+                <th>Customer</th>
+                <th>Status</th>
+                <th>Customer ID</th>
+                <th>Retained</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            {data2.map((item, index) => (
+                <tr key={index}>
+                    <td>{item.name}</td>
+                    <td>
+                        <span className={`status-badge ${item.status.toLowerCase().replace(" ", "-")}`}>
+                            {item.status}
+                        </span>
+                    </td>
+                    <td>{item.id}</td>
+                    <td>{item.time}</td>
+                    <td>{item.amount}</td>
+                </tr>
+            ))}
+        </tbody>
+    </table>
+</div>
 
             {/* Traffic Channel Donut Chart */}
             <div className="traffic-channel-container">
