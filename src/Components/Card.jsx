@@ -83,3 +83,69 @@ export default StatsCards;
 //   );
 // }
 
+
+
+// import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
+
+// const data = [
+//   { name: 'Jan', balance: 72000 },
+//   { name: 'Feb', balance: 68000 },
+//   { name: 'Mar', balance: 70000 },
+//   { name: 'Apr', balance: 73000 },
+//   { name: 'May', balance: 75000 },
+//   { name: 'Jun', balance: 77000 },
+//   { name: 'Jul', balance: 79000 },
+//   { name: 'Aug', balance: 78000 },
+// ];
+
+// export default function Wallet() {
+//   return (
+//     <div className="p-6 bg-gray-100 min-h-screen flex items-center justify-center">
+//       <div className="w-full max-w-4xl bg-white shadow-lg rounded-2xl p-6">
+//         <h2 className="text-gray-500 text-lg font-medium">My Wallets</h2>
+//         <div className="flex justify-between items-center mt-2">
+//           <span className="text-lg font-bold">My Balance</span>
+//           <span className="text-blue-500 font-bold">$79,356.46 <span className="text-green-500">+1.2%</span></span>
+//         </div>
+//         <ResponsiveContainer width="100%" height={250}>
+//           <LineChart data={data}>
+//             <XAxis dataKey="name" stroke="#8884d8" />
+//             <YAxis stroke="#8884d8" />
+//             <Tooltip />
+//             <Line type="monotone" dataKey="balance" stroke="#FF7F50" strokeWidth={2} dot={{ r: 3 }} />
+//           </LineChart>
+//         </ResponsiveContainer>
+//       </div>
+//     </div>
+//   );
+// }
+
+
+
+// export default function Wallet() {
+//   const cards = [
+//     { number: '1111 2222 3333 4444', name: 'Jordan Bloom', type: 'Personal' },
+//     { number: '4444 3333 2222 1111', name: 'Mac Profits', type: 'Business' },
+//     { number: '1111 2222 3333 4444', name: 'Jason Brain', type: 'Personal' },
+//   ];
+
+//   return (
+//     <div className="p-6 bg-gray-100 min-h-screen flex items-center justify-center">
+//       <div className="w-full max-w-5xl bg-white shadow-lg rounded-2xl p-6">
+//         <h2 className="text-gray-500 text-lg font-medium">My Card</h2>
+//         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+//           {cards.map((card, index) => (
+//             <div key={index} className="bg-white border rounded-xl p-4 shadow-md flex flex-col items-start">
+//               <div className="flex justify-between w-full">
+//                 <span className="text-xl font-bold">{card.number}</span>
+//                 <img src="/mastercard-logo.png" alt="Card Logo" className="h-6" />
+//               </div>
+//               <div className="mt-4 text-gray-600">{card.name}</div>
+//               <div className="text-gray-500 text-sm">{card.type}</div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
